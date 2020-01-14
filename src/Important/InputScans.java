@@ -15,7 +15,6 @@ public abstract class InputScans {
 
     public static String ReadString(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Type: ");
         return sc.nextLine();
     }
 

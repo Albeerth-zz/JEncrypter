@@ -1,7 +1,7 @@
 package UIs;
 import Important.InputScans;
-
 import static Crypt.Encrypt.*;
+import static Crypt.Decrypt.*;
 
 public class UInterfaces extends InputScans {
 
@@ -15,6 +15,7 @@ public class UInterfaces extends InputScans {
                 EncryptMenu();
                 break;
             case 2:
+                DecryptMenu();
                 break;
             case 3:
                 System.exit(1);
@@ -39,7 +40,18 @@ public class UInterfaces extends InputScans {
         }
     }
     public static void DecryptMenu() {
-
+        System.out.println("DECRYPT MENU");
+        System.out.println("[1] Decrypt a Message");
+        System.out.println("[2] Go Back");
+        switch (ReadInt()){
+            case 1:
+                StartDecrypt();
+                break;
+            case 2:
+                break;
+            default:
+                break;
+        }
     }
 
 
