@@ -1,4 +1,5 @@
 package UIs;
+import static Crypt.Encrypt.*;
 
 public class UInterfaces extends Important.InputScann {
 
@@ -27,6 +28,7 @@ public class UInterfaces extends Important.InputScann {
         System.out.println("[2] Go Back");
         switch (ReadInt()){
             case 1:
+                StartEncrypt();
                 break;
             case 2:
                 break;
