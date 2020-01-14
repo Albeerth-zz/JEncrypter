@@ -1,6 +1,8 @@
 package Crypt;
 
-public class Encrypt extends Important.InputScann{
+import Important.InputScans;
+
+public class Encrypt extends InputScans {
 
     private static String userMessage;
     private static int indexArray= 0;

@@ -1,7 +1,9 @@
 package UIs;
+import Important.InputScans;
+
 import static Crypt.Encrypt.*;
 
-public class UInterfaces extends Important.InputScann {
+public class UInterfaces extends InputScans {
 
     public static void PrincipalMenu(){
         System.out.println("J-ENCRYPTER MENU");
