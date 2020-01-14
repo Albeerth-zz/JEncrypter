@@ -11,7 +11,7 @@ public class Encrypt extends InputScans {
     public static void StartEncrypt(){
         ReadMessage();
         GetCharMessage(userMessage);
-        System.out.println(encryptedMessage);
+        ShowEncryptMessage();
 
     }
 
@@ -42,7 +42,13 @@ public class Encrypt extends InputScans {
     }
 
     private static void AppendNewMessage(int indexNumber){
+
         encryptedMessage+= arrayCode[indexNumber];
+    }
+
+    private static void ShowEncryptMessage(){
+        System.out.println("Encrypt Message:");
+        System.out.println(encryptedMessage);
     }
 
 
